@@ -63,5 +63,3 @@ Indices are specified in the extended format, starting with index 1 (not 0!).
 Because we do not specify a cohort in the map file, indices must be adjusted in the following way. 
 For example, if bits i and j are set in cohort 2, then their corresponding indices are i + k and j + k in the map file. 
 The number of columns is equal to (h * m). This file cannot have a CSV header line.
-```
-
