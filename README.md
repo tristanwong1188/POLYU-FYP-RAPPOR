@@ -46,14 +46,15 @@ for (var i = 0; i < labels.length; ++i) {
 
 
 To help familiarize myself with the RAPPOR JS implementation:
-2. Counts file (8*29 = 232 records)
+
+Counts file (8*29 = 232 records)
 1st col -> no. of reports
 remaining cols (28) -> no. of times the bit is set
 Required. This file must have as many rows as cohorts. The first column contains the number of reports in the cohort. 
 The remaining k columns specify the number of times the corresponding bit was set in all reports (in the corresponding cohort).
 This file cannot have a CSV header line.
 
-3. Map file
+Map file
 1st col -> strings
 remaining cols -> which bit each string is hashed
 cohorts -> 64 (given by the alg., not by the simulation website)
