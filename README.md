@@ -1,7 +1,7 @@
-# RAPPORPOLYUFYP
-Tristan WONG's Final Year Project about RAPPOR algorithm in the Hong Kong Polytechnic University
-
-With JavaScript, capture data value on the console of a browser：
+**# RAPPORPOLYUFYP**
+**Tristan WONG's Final Year Project about RAPPOR algorithm in the Hong Kong Polytechnic University**
+**With JavaScript, capture data value on the console of a browser：**
+**The following source code is developed by Tristan WONG based on RAPPOR algorithm**
 
 ```
 //true return
