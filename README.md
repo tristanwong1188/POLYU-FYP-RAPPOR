@@ -24,7 +24,7 @@ document.getElementsByName('q-5-dW2n')
 })
 ```
 
-https://www.youtube.com/watch?v=cSuEAD-Tnd4
+>How to capture value with JavaScript: https://www.youtube.com/watch?v=cSuEAD-Tnd4
 
 ```
 //divide a string in Tencent Survey into a number of independent strings
