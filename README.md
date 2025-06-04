@@ -69,3 +69,5 @@ for (var i = 0; i < labels.length; ++i) {
 >Because we do not specify a cohort in the map file, indices must be adjusted in the following way. 
 >For example, if bits i and j are set in cohort 2, then their corresponding indices are i + k and j + k in the map file. 
 >The number of columns is equal to (h * m). This file cannot have a CSV header line.
+
+![image](https://github.com/user-attachments/assets/b61acc60-120e-475f-bcde-62f6e4668271)
