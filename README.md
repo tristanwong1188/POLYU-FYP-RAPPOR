@@ -80,11 +80,17 @@ for (var i = 0; i < labels.length; ++i) {
 >![image](https://github.com/user-attachments/assets/b61acc60-120e-475f-bcde-62f6e4668271)
 >There are about 100 respondents in this research
 
->In the following, there are some test cases using different methods of RAPPOR algorithm:
 
+>
+>
+>
+
+>In the following, there are some test cases using different methods of RAPPOR algorithm:
+>The algorithm (i.e., the analysis functions) is developed in Python and R:
+>
 >A test case with unif distribution:
 >![image](https://github.com/user-attachments/assets/df44a074-f321-4584-9245-4c867e0cc202)
-
+>
 >A test case with gauss distribution:
 >![image](https://github.com/user-attachments/assets/3de21bb4-d68b-4d6d-a512-9607c08f8ee2)
 
@@ -98,3 +104,37 @@ for (var i = 0; i < labels.length; ++i) {
 >![image](https://github.com/user-attachments/assets/073e227f-56e8-44a5-80b0-8aec800a496d)
 
 >In my conclusion, RAPPOR is not suitable for this kind of research, because too small number of perople are involved.
+
+>
+>>
+>>
+>>
+To help familiarize myself with the RAPPOR JS implementation:
+2. Counts file (8*29 = 232 records)
+1st col -> no. of reports
+remaining cols (28) -> no. of times the bit is set
+Required. This file must have as many rows as cohorts. The first column contains the number of reports in the cohort. 
+The remaining k columns specify the number of times the corresponding bit was set in all reports (in the corresponding cohort).
+This file cannot have a CSV header line.
+3. Map file
+1st col -> strings
+remaining cols -> which bit each string is hashed
+cohorts -> 64 (given by the alg., not by the simulation website)
+Required. The first column contains candidate strings. The remaining columns show which bit each string is hashed to within each cohort.
+Indices are specified in the extended format, starting with index 1 (not 0!). 
+Because we do not specify a cohort in the map file, indices must be adjusted in the following way. 
+For example, if bits i and j are set in cohort 2, then their corresponding indices are i + k and j + k in the map file. 
+The number of columns is equal to (h * m). This file cannot have a CSV header line.
+>
+>
+> 
+>
+
+![下载 (1)](https://github.com/user-attachments/assets/af837be1-df56-460c-99ff-01a9a6b63798)
+
+![下载](https://github.com/user-attachments/assets/273b8179-2d06-461c-ad67-1cd99f9a5c8a)
+
+![image](https://github.com/user-attachments/assets/d81ba5cd-7bff-4891-a9ea-956cf09d8eaf)
+
+![image](https://github.com/user-attachments/assets/f21c1fb5-baa0-4631-ba3d-ebf658d2b293)
+
