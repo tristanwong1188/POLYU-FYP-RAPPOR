@@ -106,25 +106,24 @@ for (var i = 0; i < labels.length; ++i) {
 >In my conclusion, RAPPOR is not suitable for this kind of research, because too small number of perople are involved.
 
 >
->>
->>
->>
-To help familiarize myself with the RAPPOR JS implementation:
-2. Counts file (8*29 = 232 records)
-1st col -> no. of reports
-remaining cols (28) -> no. of times the bit is set
-Required. This file must have as many rows as cohorts. The first column contains the number of reports in the cohort. 
-The remaining k columns specify the number of times the corresponding bit was set in all reports (in the corresponding cohort).
-This file cannot have a CSV header line.
-3. Map file
-1st col -> strings
-remaining cols -> which bit each string is hashed
-cohorts -> 64 (given by the alg., not by the simulation website)
-Required. The first column contains candidate strings. The remaining columns show which bit each string is hashed to within each cohort.
-Indices are specified in the extended format, starting with index 1 (not 0!). 
-Because we do not specify a cohort in the map file, indices must be adjusted in the following way. 
-For example, if bits i and j are set in cohort 2, then their corresponding indices are i + k and j + k in the map file. 
-The number of columns is equal to (h * m). This file cannot have a CSV header line.
+>
+>
+>
+>To help familiarize myself with the RAPPOR JS implementation:
+>2. Counts file (8*29 = 232 records)
+>1st col -> no. of reports
+>remaining cols (28) -> no. of times the bit is set Required. This file must have as many rows as cohorts. The first column contains the number of reports in the cohort. 
+>The remaining k columns specify the number of times the corresponding bit was set in all reports (in the corresponding cohort).
+>This file cannot have a CSV header line.
+>
+>
+>3. Map file
+>1st col -> strings
+>remaining cols -> which bit each string is hashed cohorts -> 64 (given by the alg., not by the simulation website) Required. The first column contains candidate strings. The >remaining columns show which bit each string is hashed to within each cohort.
+>Indices are specified in the extended format, starting with index 1 (not 0!). 
+>Because we do not specify a cohort in the map file, indices must be adjusted in the following way. 
+>For example, if bits i and j are set in cohort 2, then their corresponding indices are i + k and j + k in the map file. 
+>The number of columns is equal to (h * m). This file cannot have a CSV header line.
 >
 >
 > 
